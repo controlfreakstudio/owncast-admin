@@ -224,9 +224,9 @@ export const VIDEO_VARIANT_SETTING_DEFAULTS = {
 
 // VIDEO VARIANT FORM - framerate
 export const FRAMERATE_DEFAULTS = {
-  min: 24,
+  min: 25,
   max: 120,
-  defaultValue: 24,
+  defaultValue: 25,
   unit: 'fps',
   incrementBy: null,
   tip: 'Reducing your framerate will decrease the amount of video that needs to be encoded and sent to your viewers, saving CPU and bandwidth at the expense of smoothness.  A lower value is generally is fine for most content.',
@@ -234,6 +234,7 @@ export const FRAMERATE_DEFAULTS = {
 export const FRAMERATE_SLIDER_MARKS = {
   [FRAMERATE_DEFAULTS.min]: `${FRAMERATE_DEFAULTS.min} ${FRAMERATE_DEFAULTS.unit}`,
   30: '',
+  50: '',
   60: '',
   90: '',
   [FRAMERATE_DEFAULTS.max]: `${FRAMERATE_DEFAULTS.max} ${FRAMERATE_DEFAULTS.unit}`,
@@ -241,7 +242,8 @@ export const FRAMERATE_SLIDER_MARKS = {
 export const FRAMERATE_TOOLTIPS = {
   [FRAMERATE_DEFAULTS.min]: `${FRAMERATE_DEFAULTS.min}fps - Good for film, presentations, music, low power/bandwidth servers.`,
   30: '30fps - Good for slow/casual games, chat, general purpose.',
-  60: '60fps - Good for fast/action games, sports, HD video.',
+  50: '50fps - Good for fast/action games, sports, HD video. EU',
+  60: '60fps - Good for fast/action games, sports, HD video. NA',
   90: '90fps - Good for newer fast games and hardware.',
   [FRAMERATE_DEFAULTS.max]: `${FRAMERATE_DEFAULTS.max}fps - Experimental, use at your own risk!`,
 };
